@@ -18,6 +18,7 @@
     align-items: center;
     background-color: white;
     border: none;
+    color: black;
     & > span {
       font-size: 16px;
     }
@@ -27,6 +28,7 @@
     transition: max-height 0.5s ease-out;
     max-height: 0;
     width: 100%;
+    color: black;
 
     & > p {
       padding: 0.5rem 0.625rem;
