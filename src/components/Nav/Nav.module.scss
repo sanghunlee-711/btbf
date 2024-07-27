@@ -1,0 +1,22 @@
+.nav {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  border-bottom: 1px solid #f7f7f7;
+  padding: 0px 0.625rem;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > a {
+      display: block;
+      height: fit-content;
+      width: fit-content;
+      padding: 0px;
+    }
+  }
+}

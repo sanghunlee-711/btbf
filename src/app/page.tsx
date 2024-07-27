@@ -1,11 +1,10 @@
 import Image from 'next/image';
-import styles from './page.module.css';
+import styles from '../styles/page.module.css';
 import Link from 'next/link';
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      Better than before the folks
       <Image
         alt="sample"
         src="/images/sample.png"
@@ -13,10 +12,8 @@ export default function Home() {
         width={500}
         height={500}
         layout="responsive"
+        className={styles.mainImage}
       />
-      <Link href="https://www.instagram.com/betterthanbeforefolks/">
-        Instagram
-      </Link>
     </main>
   );
 }
