@@ -1,0 +1,71 @@
+.drops {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 0 auto;
+
+  & > li {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: 1520px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.description {
+  // padding: 0.625rem;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  max-height: 0px;
+  max-width: 100%;
+  color: black;
+
+  & > p {
+    margin: 0.625rem 0px;
+    white-space: pre-wrap; /* \n을 줄바꿈으로 처리 */
+    overflow-wrap: break-word; /* 단어가 넘칠 경우 줄바꿈 */
+    line-height: 80%;
+  }
+}
+
+.open {
+  max-height: 240px;
+}
+
+.arrow {
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.openarrow {
+  transform: rotate(180deg);
+}
+
+.description-wrapper {
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > h2 {
+      font-weight: 800;
+    }
+  }
+}
+
+.drops-container {
+  & > h1 {
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+}

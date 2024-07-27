@@ -69,8 +69,8 @@ const ContactForm = () => {
             onChange={handleChange}
           />
 
-          <label htmlFor="reason">Reason for Contact</label>
-          <select
+          {/* <label htmlFor="reason">Reason for Contact</label> */}
+          {/* <select
             id="reason"
             name="reason"
             value={formData.reason}
@@ -80,7 +80,7 @@ const ContactForm = () => {
             <option value="General Inquiry">일반 질문</option>
             <option value="Order Issue">주문 오류</option>
             <option value="Feedback">기타</option>
-          </select>
+          </select> */}
 
           <label htmlFor="message">Message</label>
           <textarea
