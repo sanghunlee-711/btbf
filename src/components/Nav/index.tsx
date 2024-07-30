@@ -6,6 +6,7 @@ import styles from './Nav.module.scss';
 import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { NAVER_STORE_LINK } from '@/constants/smartStore';
 
 const Nav = () => {
   const route = useRouter();
@@ -34,7 +35,7 @@ const Nav = () => {
           />
         </Link>
         <div>
-          <Link href="https://smartstore.naver.com/thegorgeous11">
+          <Link href={NAVER_STORE_LINK}>
             <Image
               src="/images/shop.png"
               width={40}
@@ -52,6 +53,7 @@ const Nav = () => {
       </nav>
       <menu className={`${styles.menu} ${isClickedBurger ? styles.open : ''}`}>
         <ul>
+          <li onClick={() => goPageWithCloseMenu(NAVER_STORE_LINK)}>Store</li>
           <li onClick={() => goPageWithCloseMenu('/support')}>Support</li>
           <li onClick={() => goPageWithCloseMenu('/drops')}>Drops</li>
         </ul>
