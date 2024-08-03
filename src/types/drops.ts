@@ -1,5 +1,5 @@
 export interface DropsDetail {
   title: string;
-  imageSrc: string;
+  imageSrc: string[];
   descriptions: string;
 }
