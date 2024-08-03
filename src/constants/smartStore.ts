@@ -1,2 +1,1 @@
-export const NAVER_STORE_LINK =
-  'http://smartstore.naver.com/betterthanbeforefolks';
+export const NAVER_STORE_LINK = 'https://smartstore.naver.com/btbfthefolks';
