@@ -8,8 +8,8 @@ const Drops = () => {
   return (
     <main className={Pagestyles.main}>
       <ul className={styles.drops}>
-        {DROPS_LIST.map((props) => (
-          <DropDescription {...props} />
+        {DROPS_LIST.map((props, idx) => (
+          <DropDescription {...props} key={props.title + idx} />
         ))}
       </ul>
     </main>
