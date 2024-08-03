@@ -9,7 +9,7 @@
 }
 
 .mainImage {
-  max-width: 712px;
+  // max-width: 712px;
 }
 
 .description {
@@ -232,4 +232,18 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+//
+
+.mainImage {
+  transition: opacity 1s ease-in-out;
+}
+
+.fade {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
 }

@@ -8,10 +8,10 @@ export default function Home() {
       <Link href="/drops">
         <Image
           alt="sample"
-          src="/images/sample.png"
+          src="/images/main-page/masking.jpeg"
           loading="eager"
-          width={500}
-          height={500}
+          width={600}
+          height={600}
           layout="responsive"
           className={styles.mainImage}
         />
