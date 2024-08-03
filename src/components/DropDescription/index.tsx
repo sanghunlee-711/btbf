@@ -5,6 +5,7 @@ import Image from 'next/image';
 import styles from '@/styles/drops.module.scss';
 import { DropsDetail } from '@/types/drops';
 import Slider from '../Slider';
+import Link from 'next/link';
 
 interface DropDescriptionProps extends DropsDetail {}
 
@@ -12,6 +13,7 @@ const DropDescription = ({
   title,
   imageSrc,
   descriptions,
+  storeLink,
 }: DropDescriptionProps) => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
 
@@ -31,10 +33,8 @@ const DropDescription = ({
           width={64}
           height={64}
           layout="responsive"
-          // className={styles.image}
         />
       )}
-
       {descriptions.length > 0 && (
         <div className={styles['description-wrapper']}>
           <div onClick={() => handleClickDescription(!isClicked)}>
@@ -51,6 +51,19 @@ const DropDescription = ({
             <p>{descriptions}</p>
           </section>
         </div>
+      )}
+      {storeLink && (
+        <Link className={styles['shop-link']} href={storeLink}>
+          <span>Go to shop </span>
+          <Image
+            src="/images/shop.png"
+            width={32}
+            height={32}
+            alt="shop"
+            quality={100}
+            priority
+          />
+        </Link>
       )}
     </li>
   );

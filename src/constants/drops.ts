@@ -1,4 +1,5 @@
 import { DropsDetail } from '@/types/drops';
+import { NAVER_STORE_LINK } from './smartStore';
 
 export const DROPS_LIST: DropsDetail[] = [
   {
@@ -13,6 +14,7 @@ export const DROPS_LIST: DropsDetail[] = [
                   \nWho is your champion? 
                   \nIt could be not only an athlete but also someone you love. 
                   \nTry to find your own champion's back.`,
+    storeLink: 'https://smartstore.naver.com/btbfthefolks/products/10689611356',
   },
   {
     title: '2nd Drop - Comming Soon',
@@ -24,9 +26,4 @@ export const DROPS_LIST: DropsDetail[] = [
     imageSrc: ['/images/comming-soon.png'],
     descriptions: ``,
   },
-  // {
-  //   title: '4th Drop - Comming Soon',
-  //   imageSrc: '/images/comming-soon.png',
-  //   descriptions: ``,
-  // },
 ];

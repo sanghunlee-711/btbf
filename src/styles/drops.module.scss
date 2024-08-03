@@ -69,3 +69,12 @@
     font-weight: 800;
   }
 }
+
+.shop-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 12px;
+  font-weight: 800;
+  color: RGBA(22, 29, 36, 0.5);
+}
