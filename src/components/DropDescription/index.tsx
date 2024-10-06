@@ -32,7 +32,8 @@ const DropDescription = ({
           src={imageSrc[0]}
           width={64}
           height={64}
-          layout="responsive"
+          // layout=""
+          priority
         />
       )}
       {descriptions.length > 0 && (

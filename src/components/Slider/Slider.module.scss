@@ -2,18 +2,25 @@
 .slider {
   overflow: hidden;
   width: 100%;
+  height: fit-content;
   position: relative;
 }
 
 .slider-wrapper {
   display: flex;
-
+  height: fit-content;
+  // max-height: 440px;
   transition: transform 0.3s ease-in-out;
+  
+  & > div {
+    margin: 12px 0px;
+    height: fit-content
+  }
 }
 
 .slider-slide {
   min-width: 100%;
-  box-sizing: border-box;
+  // box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
